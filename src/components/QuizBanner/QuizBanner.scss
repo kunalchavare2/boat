@@ -1,0 +1,22 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+.quiz-banner {
+    cursor: pointer;
+    height: 640px;
+    max-width: 1600px;
+    margin-bottom: 30px;
+    background: url('../../assets/images/quizBanner.jpg');
+    background-size: cover;
+    background-position-x: center;
+}
+
+@media screen and (max-width: 768px) {
+    .quiz-banner {
+        height: 800px;
+        background: url('../../assets/images/mobile-banner-gifting-page_1560x.jpg'); 
+        background-size: cover;    
+        background-repeat: no-repeat;
+        background-position:  center 25%;
+    }
+}

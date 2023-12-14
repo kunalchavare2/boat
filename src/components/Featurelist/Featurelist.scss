@@ -1,0 +1,16 @@
+@import '../../styles/partials/mixins';
+@import '../../styles//partials/variables';
+
+.feature-list {
+    padding: 10px 0 20px 0;
+    @include width-property($width:95%, $max-width:1600px);
+    margin: 0 auto;
+    @include flex-container($justify-content:space-between);
+    gap: 10px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+       display: none;
+    }
+}
+

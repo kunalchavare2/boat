@@ -1,0 +1,11 @@
+@import '../../styles//partials/mixins';
+@import '../../styles//partials/variables';
+
+.card-btn {
+    display: inline-block;
+    @include font($font-color: $color-white , $font-size: 20, $font-weight: 600);
+    line-height: 1.25rem;
+    padding: 12px 13px;
+    background-color: $color-black;
+    border-radius: 10px;
+}

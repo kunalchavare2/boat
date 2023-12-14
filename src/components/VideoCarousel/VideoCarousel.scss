@@ -1,0 +1,33 @@
+@import '../../styles/partials/mixins';
+
+.video-carousel {
+    @include flex-container();
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    @include width-property($width: 95%, $max-width: 1600px);
+    margin: auto;
+    padding: 20px 0;
+}
+
+.video-carousel::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.carousel-item {
+    &__video {
+        border-radius: 12px;
+        height: 318px;
+    }
+
+    &__heading {
+        text-align: center;
+        @include proxima-font-bold();
+        font-weight: 500;
+        font-size: 1.25rem;
+        margin-top: 10px;
+        line-height: 20px;
+        text-transform: capitalize;
+    }
+}

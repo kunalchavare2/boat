@@ -1,0 +1,95 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+.footer-wrapper {
+    background-color: $color-blue-4;
+}
+
+.footer {
+    font-size: 1rem;
+    @include flex-container($direction: column);
+    @include width-property($width: 95%, $max-width: 1600px);
+    margin: 0 auto;
+    padding: 40px 0 20px 0;
+
+    &__top {
+        @include flex-container($justify-content:space-between, $flex-wrap:wrap);
+        gap: 20px 0;
+
+        &__column {
+            min-width: 220px;
+            width: max-content;
+            @include flex-container($direction: column);
+            gap: 18px 0;
+            width: 22%;
+
+            &-heading {
+                font-size: 1.0625rem;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+
+            &-link {
+                display: inline-block;
+            }
+
+            &-logo {
+                width: 90px;
+                margin-left: 10px;
+            }
+            &-logo img {
+                width: 100%;
+            }
+        }
+    }
+
+    .social-connect {
+        min-width: 315px;
+        width: 25%;
+    }
+
+    // Subscribe form
+    &__subscribe-form {
+        font-size: .75rem;
+        padding: 5px 2px;
+        border-radius: 20px;
+        
+
+        &-input,
+        &-btn {
+            font-size: inherit;
+            outline: none;
+            border: none;
+            padding: 10px 10px ;
+        }
+        
+        &-input {           
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding-left: 14px;
+            width: 220px;      
+            background-color: $color-black-2;    
+        }
+        
+        &-btn {
+            color: $color-white;
+            background-color: $color-red;
+            opacity: 0.9;
+            font-weight: 600;            
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    } 
+
+    // Copy right text
+    &__bottom span{
+        display: block;
+        font-size: .875rem;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+
+
+}
+

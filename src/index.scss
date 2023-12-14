@@ -1,0 +1,17 @@
+@import url('./styles/partials/_mixins.scss');
+@import url('./styles/partials/_reset.scss');
+
+
+@font-face {
+  font-family: proximaNova;
+  src: url('./assets/fonts/proximaNova/ProximaNovaFont.otf');
+}
+
+body {
+  margin: 0;
+  font-family: proximaNova, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
